@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #50E3C2;
+    --tertiary-color: #9013FE;
+    --text-color: #4A4A4A;
+    --background-color: #F5F7FA;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+#language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#language-selector a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+a.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: var(--tertiary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#benefits-title {
+    margin-top: 60px;
+    font-size: 1.5em;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.benefit {
+    flex: 1 1 300px;
+    margin: 15px;
+    padding: 25px;
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.benefit h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.benefit p {
+    margin-bottom: 0;
+}
+
+#coupon-image {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 30px 20px;
+    }
+    .benefit {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+    #language-selector {
+        position: static;
+        margin-top: 10px;
+    }
+}
